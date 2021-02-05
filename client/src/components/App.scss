@@ -7,15 +7,32 @@ body {
     top: 0; /* Stay on top */
     width: 100%; /* Full width */
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
-    height: 80px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .navbar {
-    background-color: rgb(116, 94, 94);
+    background-color: whitesmoke;
     position: sticky; /* Make it stick/fixed */
     top: 0; /* Stay on top */
     width: 100%; /* Full width */
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
-    height: 80px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 6;
+
+    .nav-item {
+      height: 100%;
+      width: 140px;
+      text-align: center;
+
+      &:hover {
+        border-bottom: 4px solid black;
+      }
+    }
   }
 }
