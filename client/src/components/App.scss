@@ -1,22 +1,21 @@
 body {
-  margin-top: 100px;
 
 
   .header {
-    background-color: aqua;
-    position: fixed; /* Make it stick/fixed */
+    background-color: whitesmoke;
+    position: sticky; /* Make it stick/fixed */
     top: 0; /* Stay on top */
     width: 100%; /* Full width */
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
-    height: 100px;
+    height: 80px;
   }
 
-  .nav {
-    background-color: aqua;
-    position: fixed; /* Make it stick/fixed */
+  .navbar {
+    background-color: rgb(116, 94, 94);
+    position: sticky; /* Make it stick/fixed */
     top: 0; /* Stay on top */
     width: 100%; /* Full width */
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
-    height: 100px;
+    height: 80px;
   }
 }
