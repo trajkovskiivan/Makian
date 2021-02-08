@@ -1,0 +1,154 @@
+.lifeStyle-show-bar {
+  height: auto;
+  width: 100%;
+  // background-color: pink;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  // display: grid;
+  // grid-template-columns: repeat(2, minmax(auto, 250px));
+  padding: 10px 0;
+
+  .lifeStyle-article {
+    width: 47%;
+    margin: 5px 0;
+    background-color: white;
+    text-align: center;
+    display: block;
+    img {
+      height: 400px;
+      width: 500px;
+      // height: min(400px);
+      // width: min(500px);
+
+    }
+
+    .lifeStyle-article-text {
+      width: 75%;
+      margin: 0 auto;
+      p {
+        text-align: center;
+        padding: 0;
+        margin: 2px;
+      }
+      button {
+        margin: 5%;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1120px) {
+  .lifeStyle-show-bar {
+    .lifeStyle-article {
+      margin: 4px;
+      img {
+        height: 350px;
+        width: 450px;
+      } 
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .lifeStyle-show-bar {
+    .lifeStyle-article {
+      img {
+        height: 320px;
+        width: 420px;
+      } 
+    }
+  }
+}
+@media (max-width: 960px) {
+  .lifeStyle-show-bar {
+    .lifeStyle-article {
+      img {
+        height: 300px;
+        width: 400px;
+      } 
+    }
+  }
+}
+@media (max-width: 900px) {
+  .lifeStyle-show-bar {
+    .lifeStyle-article {
+      img {
+        height: 270px;
+        width: 370px;
+      } 
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .lifeStyle-show-bar {
+    height: auto;
+    flex-direction: column;
+    .lifeStyle-article {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      // padding-left: 5px;
+      img {
+        padding-left: 8px;
+        height: 320px;
+        width: 420px;
+      } 
+      .lifeStyle-article-text {
+        margin: auto 5%;
+      } 
+    }
+  }
+}
+@media (max-width: 700px) {
+  .lifeStyle-show-bar {
+    height: auto;
+    .lifeStyle-article {
+      img {
+        height: 250px;
+        width: 350px;
+      } 
+    }
+  }
+}
+@media (max-width: 620px) {
+  .lifeStyle-show-bar {
+    height: auto;
+    .lifeStyle-article {
+      img {
+        height: 200px;
+        width: 300px;
+      } 
+    }
+  }
+}
+@media (max-width: 550px) {
+  .lifeStyle-show-bar {
+    height: auto;
+    .lifeStyle-article {
+      flex-direction: column;
+      text-align: center;
+      display: block;
+      img {
+        height: 250px;
+        width: 350px;
+      } 
+      .lifeStyle-article-text {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .lifeStyle-show-bar {
+    .lifeStyle-article {
+      img {
+        height: 180px;
+        width: 250px;
+      } 
+    }
+  }
+}

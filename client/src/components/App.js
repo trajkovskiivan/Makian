@@ -4,7 +4,6 @@ import {Router, Route, Switch} from 'react-router-dom';
 import history from '../history';
 
 import Nav from './Nav/Nav';
-import Header from './Header/Header';
 import Home from './Home/Home';
 import Footer from './Footer/Footer';
 
@@ -20,8 +19,6 @@ import './App.scss';
 const App = (props) => {
   return (
     <div>
-      <Header />
-
       <Router history={history}>
         <div>
           <Nav />

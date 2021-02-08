@@ -1,6 +1,7 @@
 import React from 'react';
 
-import './Announcement.css'
+
+import './Announcement.scss'
 
 const Announcement = () => {
   return (
@@ -11,9 +12,12 @@ const Announcement = () => {
         <h1>Little New Arrivals</h1>
         <h4>Spring, we've been waiting for you! Discover the sweetest styles in miniature form for your new arrivals, babies and toddlers up to 2 years old.</h4>
       </div>
-      <div className='announcement-button'>
-        <button>Shop Now</button>
-      </div>
+      <a href="/content">
+        <div className='announcement-button' >
+          <p>Shop Now</p>
+        </div>
+      </a>
+
 
 
     </div>

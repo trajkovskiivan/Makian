@@ -7,7 +7,7 @@ import SocialMediaShowBar from './SocialMediaShowBar/SocialMediaShowBar';
 
 const Home = () => {
   return (
-    <div>
+    <div className="home-container">
       <Announcement />
       <ProductsShowbar />
       <LifeStyleShowBar />

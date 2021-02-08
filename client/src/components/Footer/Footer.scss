@@ -1,0 +1,137 @@
+.footer {
+  height: auto;
+  width: 100%;
+  background-color: white;
+  display: grid;
+  grid-template-areas: 
+  "customer contact about"
+  "customer contact about"
+  "customer contact about"
+  "social terms cards";
+  margin-bottom: 20px;
+
+  li {
+    list-style-type: none;
+    a {
+      &:hover {
+        color: black;
+      }
+    }
+  }
+
+
+  .curstomer-service {
+    grid-area: customer;
+  }
+
+  .contact-us {
+    grid-area: contact;
+    ul {
+      padding-left: 10px;
+    }
+  }
+
+  .about-us {
+    grid-area: about;
+  }
+
+  .socialMedia-icons{
+    grid-area: social;
+    ul {
+      display: flex;
+      flex-direction: row;
+      i {
+        padding: 0 10px;
+        font-size: 1.2em;
+      }
+    }
+
+  }
+
+  .terms-privacy {
+    grid-area: terms;
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      .link-bullet {
+        list-style-type: disc;
+        content: "";
+      }
+    }
+ 
+  }
+
+  .credit-cards-icons{
+    grid-area: cards;
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      i {
+        padding: 0 5px;
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  .mobile-links {
+    display: none;
+    grid-area: mobile;
+  }
+}
+
+
+
+@media (max-width: 1024px) {
+  .footer {
+    grid-template-areas: 
+    "cards cards cards"
+    "social social social"
+    "mobile mobile mobile"
+    "terms terms terms";
+
+    div {
+      width: 80%;
+      margin: 0 auto;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .web-links {
+      display: none;
+    }
+    .terms-privacy  {
+      display: none;
+    }
+
+    .socialMedia-icons {
+      ul {
+        justify-content: center;
+        i {
+          font-size: 1.8rem;
+        }
+      }
+    }
+    .credit-cards-icons {
+      i {
+        font-size: 1.8rem;
+      }
+    }
+
+    .mobile-links {
+      display: flex;
+      justify-content: center;
+      padding: 20px 0;
+      ul {
+        margin: 0 5%;
+        a {
+          text-transform: capitalize;
+        }
+      }
+    }
+  
+
+  }
+
+
+}
